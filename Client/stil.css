@@ -1,0 +1,92 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+}
+
+h3{
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    margin: 20px;
+}
+h4{
+    min-width: 170px;
+    margin: 10px;
+    text-align: center;
+}
+label,input,select{
+    margin: 3px;
+}
+button{
+    margin: 5px;
+    padding: 6px;
+    min-width: 220px;
+}
+.button2{
+    background-color: #aecfa8;
+}
+.button3, .button4{
+    background-color: #fff59d;
+}
+.button5{
+    background-color: #f09f8e;
+}
+.izvodjacDiv{
+    display: flex;
+    flex-direction: column;
+}
+.kontejner{
+    display: flex;
+    /*height: 700px;*/
+}
+.kontejnerForme{
+    border: 1px solid black;
+    margin: 1px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    height: 785px;
+    justify-content: space-evenly;
+}
+.kontejnerVinila{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    /*height: 650px;*/
+    width: 600px;
+    justify-content: space-between;
+    align-content: center;
+}
+.vrsta{
+    display: inline-flex;
+    flex-direction: row;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.vinil{
+    border: 1px solid black;
+    flex: 1 1 150px;
+    margin: 5px;
+    text-align: center;
+    height: 150px;
+    min-width: 150px;
+    flex-wrap: wrap;
+    align-items:center;
+    font-size: large;
+}
+
+h4, label, div, button /*.vinil*/ {
+    font-size: 1rem;
+}
+
+@media (max-width:550px){
+    .kontejner{
+        display: flex;
+        flex-flow: column;
+    }
+    .kontejnerVinila{
+        width: 100%;
+    }
+}
